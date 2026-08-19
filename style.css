@@ -23,7 +23,7 @@ body {
 
 /* HEADER COM ANIMAÇÃO DE ENTRADA */
 header {
-    background: linear-gradient(135deg, rgba(3, 4, 94, 0.9), rgba(0, 119, 182, 0.85)), 
+    background: linear-gradient(135deg, rgba(3, 4, 94, 0.88), rgba(0, 119, 182, 0.85)), 
                 url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') no-repeat center center/cover;
     color: var(--white);
     text-align: center;
@@ -86,10 +86,18 @@ h2::after {
     border-radius: 2px;
 }
 
-p {
+p, ul {
     margin-bottom: 1.2rem;
     color: #4a5568;
     font-size: 1.15rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 /* CONTAINER DA IMAGEM VIVA */
