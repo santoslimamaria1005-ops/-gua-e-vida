@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Completa: Água e Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>A Origem e a Essência</h1>
+        <p>Mergulhe fundo na história do recurso que transformou rocha em um planeta vivo.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- SEÇÃO 1: O BERÇO DA VIDA -->
+        <section>
+            <h2>O Berço da Vida na Terra</h2>
+            <p>Há bilhões de anos, a Terra era um ambiente hostil e estéril. Foi nas profundezas dos oceanos primitivos, sob condições extremas, que as primeiras reações bioquímicas encontraram na água o solvente perfeito para dar origem às primeiras moléculas autorreplicantes. A água não é apenas uma substância que abriga a vida; ela é a própria arquitetura molecular que a tornou possível.</p>
+            <p>Cerca de 71% da superfície do nosso planeta é coberta por água, mas essa abundância é uma ilusão quando falamos de sobrevivência: mais de 97% dessa água está nos oceanos (salgada), e a maior parte do restante está presa em calotas polares e geleiras.</p>
+            
+            <div class="visual-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80" alt="O oceano primitivo e a vastidão azul da Terra">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: OBJETIVOS DESTA JORNADA -->
+        <section>
+            <h2>Nossos Objetivos e Propósito</h2>
+            <p>Compreender a água vai muito além de fórmulas químicas ou dados de consumo. Esta jornada interativa foi desenvolvida com metas claras para transformar a sua percepção:</p>
+            <ul>
+                <li><strong>Despertar Consciência Ecológica:</strong> Compreender o ciclo hidrológico e o impacto real das ações humanas sobre os mananciais e rios.</li>
+                <li><strong>Valorizar a Ciência:</strong> Entender o comportamento físico-químico único da molécula de H₂O que sustenta os ecossistemas terrestres.</li>
+                <li><strong>Promover Ação Prática:</strong> Fornecer caminhos e mentalidades para o uso racional, combate ao desperdício e tecnologias de sustentabilidade.</li>
+            </ul>
+            
+            <div class="visual-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80" alt="Natureza exuberante e conexão humana com a água">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: O CICLO DA ÁGUA E O EQUILÍBRIO -->
+        <section>
+            <h2>O Ciclo Infinito e o Equilíbrio Global</h2>
+            <p>A quantidade de água na Terra é essencialmente constante. A mesma água que os dinossauros beberam há milhões de anos é a que cai hoje como chuva em nossas cidades. Esse ciclo perfeito — evaporação, condensação, precipitação e escoamento — regula o clima global, distribui calor entre os polos e o equador, e recarrega os aquíferos subterrâneos.</p>
+            <p>No entanto, as mudanças climáticas e a poluição desenfreada estão rompendo esse ritmo natural, tornando eventos extremos (como secas prolongadas e enchentes severas) cada vez mais comuns.</p>
+            
+            <div class="visual-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80" alt="Ciclo da água, nuvens e montanhas majestosas">
+                </div>
+                <!-- Botão para voltar à página principal -->
+                <a href="index.html" class="explore-btn">
+                    <span>&larr;</span> Voltar à Página Principal
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Água e Vida. O conhecimento é o primeiro passo para a preservação.</p>
+    </footer>
+
+</body>
+</html>
