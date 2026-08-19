@@ -20,25 +20,29 @@ body {
     line-height: 1.7;
 }
 
+/* HEADER COM VISUAL CINEMATOGRÁFICO */
 header {
-    background: linear-gradient(135deg, var(--dark), var(--primary));
+    background: linear-gradient(135deg, rgba(3, 4, 94, 0.85), rgba(0, 119, 182, 0.85)), 
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') no-repeat center center/cover;
     color: var(--white);
     text-align: center;
-    padding: 5rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding: 7rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     margin-bottom: 2rem;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 0.5rem;
     letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--accent);
     font-weight: 300;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
 .container {
@@ -49,11 +53,12 @@ header p {
 
 section {
     background: var(--white);
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 119, 182, 0.08);
     transition: transform 0.3s ease;
+    border-left: 6px solid var(--secondary);
 }
 
 section:hover {
@@ -64,7 +69,6 @@ h2 {
     color: var(--primary);
     font-size: 2.2rem;
     margin-bottom: 1rem;
-    position: pointer;
 }
 
 h2::after {
@@ -80,12 +84,12 @@ h2::after {
 p {
     margin-bottom: 1.2rem;
     color: #4a5568;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
-/* EFEITO EXTRAORDINÁRIO PARA A IMAGEM E O BOTÃO */
+/* CONTAINER DA IMAGEM EXTRAORDINÁRIA */
 .visual-container {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -93,19 +97,19 @@ p {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    max-height: 380px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    max-height: 420px;
 }
 
 .image-card img {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .image-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
 /* BOTÃO MAGNÉTICO E ANIMADO */
@@ -114,7 +118,7 @@ p {
     align-items: center;
     gap: 12px;
     margin-top: 25px;
-    padding: 14px 32px;
+    padding: 15px 35px;
     background: linear-gradient(135deg, var(--secondary), var(--primary));
     color: var(--white);
     text-decoration: none;
