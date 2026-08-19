@@ -1,64 +1,149 @@
 :root {
     --primary: #0077b6;
     --secondary: #00b4d8;
-    --text: #333;
-    --bg: #f9f9f9;
+    --accent: #90e0ef;
+    --dark: #03045e;
+    --light: #f4f9fc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
-    background: var(--bg);
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
 }
 
 header {
-    background: var(--primary);
-    color: white;
-    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    color: var(--white);
     text-align: center;
+    padding: 5rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: var(--white);
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 119, 182, 0.08);
+    transition: transform 0.3s ease;
 }
 
-/* Estilo das Imagens e Botão de Navegação */
-.image-box {
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    position: pointer;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--secondary);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    color: #4a5568;
+    font-size: 1.05rem;
+}
+
+/* EFEITO EXTRAORDINÁRIO PARA A IMAGEM E O BOTÃO */
+.visual-container {
+    margin-top: 2rem;
     text-align: center;
-    margin: 20px 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.image-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-height: 380px;
 }
 
-.nav-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: var(--primary);
-    color: white;
+.image-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.image-card:hover img {
+    transform: scale(1.08);
+}
+
+/* BOTÃO MAGNÉTICO E ANIMADO */
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    color: var(--white);
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 25px rgba(0, 180, 216, 0.4);
+    transition: all 0.4s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.nav-btn:hover {
-    background-color: var(--secondary);
+.explore-btn span {
+    transition: transform 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.6);
+    transform: scale(1.05);
+}
+
+.explore-btn:hover span {
+    transform: translateX(8px);
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--dark);
+    color: var(--white);
+    margin-top: 4rem;
 }
